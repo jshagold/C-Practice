@@ -10,9 +10,19 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            StringPractice2 sp2 = new();
 
+            Console.WriteLine("StringPractice2");
+            StringPractice2 sp2 = new();
             sp2.Main();
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+            Console.WriteLine("DateTimePractice");
+            DateTimePractice dtp = new DateTimePractice();
+            dtp.Main();
+
         }
 
     }
