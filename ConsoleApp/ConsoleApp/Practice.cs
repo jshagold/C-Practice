@@ -8,5 +8,12 @@ namespace ConsoleApp
 {
     internal class Practice
     {
+        static void Main(string[] args)
+        {
+            StringPractice2 sp2 = new();
+
+            sp2.Main();
+        }
+
     }
 }

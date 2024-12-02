@@ -9,7 +9,7 @@ namespace ConsoleApp
     internal class StringPractice
     {
 
-        static void Main(string[] args)
+        public void Main()
         {
             // Contains, Replace, Trim, ToLower, SubString, IndexOf, Split
             string letter = "  친구야 잘 지내니  ";
