@@ -27,6 +27,9 @@ namespace ConsoleApp
             PropertyPractice propertyPractice = new PropertyPractice("name","value");
             propertyPractice.Main();
             Console.WriteLine(propertyPractice.Name);
+
+
+            new DelegatePractice().Main();
         }
 
     }
