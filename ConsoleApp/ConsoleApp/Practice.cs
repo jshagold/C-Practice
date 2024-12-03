@@ -23,6 +23,10 @@ namespace ConsoleApp
             DateTimePractice dtp = new DateTimePractice();
             dtp.Main();
 
+
+            PropertyPractice propertyPractice = new PropertyPractice("name","value");
+            propertyPractice.Main();
+            Console.WriteLine(propertyPractice.Name);
         }
 
     }
