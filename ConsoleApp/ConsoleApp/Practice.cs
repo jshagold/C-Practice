@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ConsoleApp.Inheritance;
 
 namespace ConsoleApp
 {
@@ -30,6 +31,10 @@ namespace ConsoleApp
 
 
             new DelegatePractice().Main();
+
+
+            Program inheritancePractice = new Program();
+            inheritancePractice.Main();
         }
 
     }
