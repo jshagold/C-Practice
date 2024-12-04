@@ -6,13 +6,26 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp.Inheritance
 {
-    internal class MainActor : Actor
+    internal class MainActor : IActor
     {
-        public MainActor(string name) : base(name) { }
+        public MainActor(string name) { }
+
+        public string Name { get; set; }
+        public string Description { get; set; }
+
+        public void AddName(string name)
+        {
+
+        }
 
         public void MoveInCamera() 
         {
             Console.WriteLine("카메라 안으로 신속 이동");
         }
+
+        //public override void RemoveName()
+        //{
+
+        //}
     }
 }

@@ -13,7 +13,7 @@ namespace ConsoleApp.Inheritance
             Console.WriteLine("\n\n\n InheritancePractice");
 
             Actor extraActor = new ExtraActor("minsu");
-            Actor mainActor = new MainActor("culsu");
+            IActor mainActor = new MainActor("culsu");
 
             extraActor.AddName("Best");
             Console.WriteLine(extraActor);
@@ -24,9 +24,9 @@ namespace ConsoleApp.Inheritance
             //extraActor.MoveOffCamera();
             //mainActor.MoveInCamera();
 
-            ActorManager actorManager = new ActorManager(mainActor);
+            ActorManager actorManager = new ActorManager(extraActor);
             actorManager.actorList.Add(extraActor);
-            actorManager.actorList.Add(mainActor);
+            //actorManager.actorList.Add(mainActor);
 
             List<ExtraActor> actorList = actorManager.GetExtraActor();
 

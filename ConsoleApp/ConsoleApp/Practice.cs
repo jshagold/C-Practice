@@ -39,6 +39,10 @@ namespace ConsoleApp
 
             DeepCopyPractice copy = new DeepCopyPractice();
             copy.Main();
+
+
+            //Actor actor = new Actor("Valll");
+            IActor.Info info = new IActor.Info(optionType: 1, moveDirection: 2);
         }
 
     }

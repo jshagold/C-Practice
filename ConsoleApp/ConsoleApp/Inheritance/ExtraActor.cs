@@ -8,15 +8,17 @@ namespace ConsoleApp.Inheritance
 {
     internal class ExtraActor : Actor
     {
-        public ExtraActor(string name) : base(name) 
-        { 
-            
-        }
+        public ExtraActor(string name) : base(name) { }
 
 
         public void MoveOffCamera()
         {
             Console.WriteLine("카메라 밖으로 신속 이동");
+        }
+
+        public override void RemoveName()
+        {
+
         }
     }
 }

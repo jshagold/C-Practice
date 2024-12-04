@@ -14,9 +14,9 @@ namespace ConsoleApp
             Console.WriteLine("\n\n\nDeepCopyPractice");
 
 
-            Actor actor = new Actor("Man");
-            Actor actor2 = actor.DeepCopy();
-            Actor actor3 = actor.Clone() as Actor;
+            IActor actor = new IActor("Man");
+            IActor actor2 = actor.DeepCopy();
+            IActor actor3 = actor.Clone() as IActor;
 
             actor = null;
 

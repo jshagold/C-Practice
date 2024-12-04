@@ -6,16 +6,36 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp.Inheritance
 {
-    internal class Actor : ICloneable
+    internal abstract class Actor : ICloneable
     {
+        public class Info
+        {
+            public int OptionType {  get; private set; }
+            public int MoveDirection { get; private set; }
+
+            public Info(int optionType, int moveDirection)
+            {
+                OptionType = optionType;
+                MoveDirection = moveDirection;
+            }
+        }
+
+
         public Actor(string name) 
         { 
             Name = name;
         }
 
+        public abstract void RemoveName();
+          
+        public void SetInfo(Info info)
+        {
+
+        }
+
         public Actor DeepCopy() 
         {
-            Actor actor = new Actor(Name);
+            //IActor actor = new Actor(Name);
             actor.Description = this.Description;
 
             return actor;
