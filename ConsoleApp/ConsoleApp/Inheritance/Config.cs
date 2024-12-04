@@ -9,5 +9,7 @@ namespace ConsoleApp.Inheritance
     internal class Config
     {
         public const string BOSS_NAME = "Boss";
+
+        public const int VAILD_ACTOR_COUNT = 10;
     }
 }

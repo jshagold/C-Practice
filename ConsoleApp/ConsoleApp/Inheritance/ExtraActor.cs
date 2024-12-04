@@ -16,9 +16,5 @@ namespace ConsoleApp.Inheritance
             Console.WriteLine("카메라 밖으로 신속 이동");
         }
 
-        public override void RemoveName()
-        {
-
-        }
     }
 }

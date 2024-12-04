@@ -15,7 +15,7 @@ namespace ConsoleApp.Inheritance
             Console.WriteLine("\n\n\n DI Program");
             // Dependency Injection, DI
 
-            ActorManager actorManager = new ActorManager(boss: new MainActor(name: Config.BOSS_NAME));
+            //ActorManager actorManager = new ActorManager(boss: new MainActor(name: Config.BOSS_NAME));
 
 
             CameraCount(cameraCount);

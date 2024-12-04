@@ -42,7 +42,7 @@ namespace ConsoleApp
 
 
             //Actor actor = new Actor("Valll");
-            IActor.Info info = new IActor.Info(optionType: 1, moveDirection: 2);
+            Actor.Info info = new Actor.Info(optionType: 1, moveDirection: 2);
         }
 
     }
