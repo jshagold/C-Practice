@@ -35,6 +35,10 @@ namespace ConsoleApp
 
             Program inheritancePractice = new Program();
             inheritancePractice.Main();
+
+
+            DeepCopyPractice copy = new DeepCopyPractice();
+            copy.Main();
         }
 
     }

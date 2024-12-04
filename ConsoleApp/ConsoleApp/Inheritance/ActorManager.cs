@@ -10,6 +10,19 @@ namespace ConsoleApp.Inheritance
     {
         public List<Actor> actorList = new List<Actor>();
 
+        private Actor boss;
+
+        public ActorManager(Actor boss) 
+        {
+            this.boss = boss;;
+        }
+
+        public void AddName(string value)
+        {
+            this.boss.AddName(value);
+        }
+
+
         public List<ExtraActor> GetExtraActor()
         {
             List<ExtraActor> actors = new List<ExtraActor>();

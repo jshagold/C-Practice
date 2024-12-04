@@ -24,7 +24,7 @@ namespace ConsoleApp.Inheritance
             //extraActor.MoveOffCamera();
             //mainActor.MoveInCamera();
 
-            ActorManager actorManager = new ActorManager();
+            ActorManager actorManager = new ActorManager(mainActor);
             actorManager.actorList.Add(extraActor);
             actorManager.actorList.Add(mainActor);
 
