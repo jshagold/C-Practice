@@ -43,6 +43,11 @@ namespace ConsoleApp
 
             //Actor actor = new Actor("Valll");
             Actor.Info info = new Actor.Info(optionType: 1, moveDirection: 2);
+
+
+            LinQPractice linQP = new LinQPractice();
+            linQP.Main();
+
         }
 
     }
