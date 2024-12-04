@@ -13,7 +13,7 @@ namespace ConsoleApp.Inheritance
             Console.WriteLine("\n\n\n InheritancePractice");
 
             Actor extraActor = new ExtraActor("minsu");
-            IActor mainActor = new MainActor("culsu");
+            Actor mainActor = new MainActor("culsu");
 
             extraActor.AddName("Best");
             Console.WriteLine(extraActor);

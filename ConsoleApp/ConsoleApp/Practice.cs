@@ -48,6 +48,8 @@ namespace ConsoleApp
             LinQPractice linQP = new LinQPractice();
             linQP.Main();
 
+            GenericPractice genericPractice = new GenericPractice(); 
+            genericPractice.Main();
         }
 
     }

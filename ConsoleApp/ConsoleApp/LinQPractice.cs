@@ -96,7 +96,6 @@ namespace ConsoleApp
            
             // Select
             var enumerable3 = infos.Select(v => new { N = v.Name, M = v.Money }).ToList();
-
             var enumerable4 = infos.Select(v => new ItemInfo(name: v.Name)).FirstOrDefault();
 
         }

@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp.Inheritance
 {
-    internal class MainActor : IActor
+    internal class MainActor : Actor
     {
-        public MainActor(string name) { }
+        public MainActor(string name) : base(name) 
+        {
+            Name = name;
+        }
 
         public string Name { get; set; }
         public string Description { get; set; }

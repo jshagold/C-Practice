@@ -12,6 +12,11 @@ namespace ConsoleApp.Inheritance
 
         private Actor boss;
 
+        public ActorManager()
+        {
+
+        }
+
         public ActorManager(Actor boss) 
         {
             this.boss = boss;;
@@ -23,6 +28,21 @@ namespace ConsoleApp.Inheritance
         }
 
 
+        public List<MainActor> GetMainActors()
+        {
+            List<MainActor> actors = new List<MainActor>();
+
+            foreach (Actor actor in actorList)
+            {
+                MainActor mainActor = actor as MainActor;
+                if(mainActor != null)
+                {
+                    actors.Add(mainActor);
+                }
+            }
+            return actors;
+        }
+
         public List<ExtraActor> GetExtraActor()
         {
             List<ExtraActor> actors = new List<ExtraActor>();
@@ -32,6 +52,23 @@ namespace ConsoleApp.Inheritance
                 ExtraActor exActor = actor as ExtraActor;
                 if(exActor != null)
                     actors.Add(exActor);
+            }
+
+            return actors;
+        }
+
+
+        public List<T> GetActors<T>() where T: Actor
+        {
+            List<T> actors= new List<T>();
+
+            foreach (Actor actor in actorList)
+            {
+                T rActor = actor as T;
+                if(rActor != null)
+                {
+                    actors.Add(rActor);
+                }
             }
 
             return actors;
