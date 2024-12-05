@@ -9,7 +9,7 @@ namespace ConsoleApp
 {
     internal class Practice
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
 
             Console.WriteLine("StringPractice2");
@@ -50,6 +50,10 @@ namespace ConsoleApp
 
             GenericPractice genericPractice = new GenericPractice(); 
             genericPractice.Main();
+
+
+            AsyncPractice asyncPractice = new AsyncPractice();
+            await asyncPractice.Main();
         }
 
     }
