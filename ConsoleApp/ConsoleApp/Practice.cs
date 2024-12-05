@@ -54,6 +54,9 @@ namespace ConsoleApp
 
             AsyncPractice asyncPractice = new AsyncPractice();
             await asyncPractice.Main();
+
+            ReflectionPractice reflectionPractice = new ReflectionPractice();
+            reflectionPractice.Main();
         }
 
     }

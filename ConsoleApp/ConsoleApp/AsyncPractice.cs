@@ -32,7 +32,7 @@ namespace ConsoleApp
             Task<int> task2 = Task.Run(() =>
             {
                 Console.WriteLine("Sub thread start...");
-                Thread.Sleep(1000);
+                Thread.Sleep(100);
                 Console.WriteLine("Sub thread end...");
 
                 return 42;
@@ -69,7 +69,7 @@ namespace ConsoleApp
         {
 
             Console.WriteLine("Sub thread start...");
-            Thread.Sleep(2000);
+            Thread.Sleep(100);
             Console.WriteLine("Sub thread end...");
 
             return 9999;
