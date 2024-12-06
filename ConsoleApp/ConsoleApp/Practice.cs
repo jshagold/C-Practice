@@ -74,6 +74,10 @@ namespace ConsoleApp
 
             OperatorPractice operatorPractice = new OperatorPractice();
             operatorPractice.Main();
+
+
+            EnumeratorPractice enumeratorPractice = new EnumeratorPractice();
+            enumeratorPractice.Main();
         }
 
     }
