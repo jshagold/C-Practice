@@ -70,6 +70,10 @@ namespace ConsoleApp
 
             UserAPIController userAPIController = new UserAPIController();
             userAPIController.PrintAPI(userEntity.ToDto().ToAPI());
+
+
+            OperatorPractice operatorPractice = new OperatorPractice();
+            operatorPractice.Main();
         }
 
     }
