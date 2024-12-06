@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConsoleApp.Inheritance;
+using ConsoleApp.MVCPractice.Controller;
+using ConsoleApp.MVCPractice.Dto;
+using ConsoleApp.MVCPractice.Model;
 
 namespace ConsoleApp
 {
@@ -57,6 +60,16 @@ namespace ConsoleApp
 
             ReflectionPractice reflectionPractice = new ReflectionPractice();
             reflectionPractice.Main();
+
+
+
+            Console.WriteLine("\n\n\nMVC Practice");
+            UserRepository userRepo = new UserRepository();
+            UserEntity userEntity = new UserEntity(id: 123, name: "Jin", password: "qwer", desc: "employee");
+            userRepo.Save(userEntity);
+
+            UserAPIController userAPIController = new UserAPIController();
+            userAPIController.PrintAPI(userEntity.ToDto().ToAPI());
         }
 
     }
