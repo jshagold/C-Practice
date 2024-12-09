@@ -84,6 +84,9 @@ namespace ConsoleApp
 
             EtcPractice2 etcPractice2 = new EtcPractice2();
             etcPractice2.Main();
+
+            EtcPractice3 etcPractice3 = new EtcPractice3();
+            etcPractice3.Main();
         }
 
     }
