@@ -63,7 +63,7 @@ namespace ConsoleApp
             {
                 position++;
                 return position < data.Length;
-            }
+            } 
 
             public void Reset()
             {

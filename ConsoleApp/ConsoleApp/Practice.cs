@@ -78,6 +78,9 @@ namespace ConsoleApp
 
             EnumeratorPractice enumeratorPractice = new EnumeratorPractice();
             enumeratorPractice.Main();
+
+            EtcPractice1 etcPractice1 = new EtcPractice1();
+            etcPractice1.Main();
         }
 
     }
