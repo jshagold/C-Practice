@@ -16,9 +16,10 @@ namespace ConsoleApp.Inheritance
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public void AddName(string name)
+        public override void AddName(string name)
         {
-
+            base.AddName(name);
+            Name += name;
         }
 
         public void MoveInCamera() 

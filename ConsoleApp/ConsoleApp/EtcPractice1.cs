@@ -97,7 +97,9 @@ namespace ConsoleApp
             ItemInfo2 itemInfo = new ItemInfo2(100, "ironsword");
             ItemInfo2 itemInfo2 = itemInfo;
 
-            int itemInfo = 0l
+            int intItemInfo = 0;
+
+
         }
 
         static void SetValue<T>(T obj)

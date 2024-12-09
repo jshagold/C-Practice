@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp.Inheritance
 {
-    internal class Actor : ICloneable
+    internal class Actor
     {
         public class Info
         {
@@ -32,7 +32,7 @@ namespace ConsoleApp.Inheritance
 
         }
 
-        public Actor DeepCopy() 
+        public Actor DeepCopy()
         {
             Actor actor = new Actor(Name);
             actor.Description = this.Description;
@@ -43,7 +43,7 @@ namespace ConsoleApp.Inheritance
         public string Name { get; set; }
         public string Description { get; protected set; }
 
-        public void AddName(string name) 
+        public virtual void AddName(string name) 
         {
             Name = name;
         }
