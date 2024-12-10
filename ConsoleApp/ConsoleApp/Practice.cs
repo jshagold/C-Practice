@@ -3,18 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ConsoleApp.Inheritance;
-using ConsoleApp.MVCPractice.Controller;
-using ConsoleApp.MVCPractice.Dto;
-using ConsoleApp.MVCPractice.Model;
+using ConsoleApp.Algorithm.baekjoon;
+using ConsoleApp.Language;
+using ConsoleApp.Language.Inheritance;
+using ConsoleApp.Language.MVCPractice.Controller;
+using ConsoleApp.Language.MVCPractice.Model;
 
 namespace ConsoleApp
 {
     internal class Practice
     {
-        static async Task Main(string[] args)
-        {
+        //static void Main(string[] args)
+        //{
+             
+        //}
 
+        static async Task LanguageLaunch()
+        {
             Console.WriteLine("StringPractice2");
             StringPractice2 sp2 = new();
             sp2.Main();
@@ -28,7 +33,7 @@ namespace ConsoleApp
             dtp.Main();
 
 
-            PropertyPractice propertyPractice = new PropertyPractice("name","value");
+            PropertyPractice propertyPractice = new PropertyPractice("name", "value");
             propertyPractice.Main();
             Console.WriteLine(propertyPractice.Name);
 
@@ -51,7 +56,7 @@ namespace ConsoleApp
             LinQPractice linQP = new LinQPractice();
             linQP.Main();
 
-            GenericPractice genericPractice = new GenericPractice(); 
+            GenericPractice genericPractice = new GenericPractice();
             genericPractice.Main();
 
 
@@ -89,8 +94,7 @@ namespace ConsoleApp
             etcPractice3.Main();
 
             EtcPractice4 etcPractice4 = new EtcPractice4();
-            etcPractice4.Main();    
+            etcPractice4.Main();
         }
-
     }
 }
